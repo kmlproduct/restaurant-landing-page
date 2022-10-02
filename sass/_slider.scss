@@ -1,0 +1,139 @@
+.slider {
+  display: flex;
+
+  .section-text {
+    width: 50%;
+    display: flex;
+
+    .next-prev {
+      display: flex;
+      flex-direction: column;
+      & > div {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #ea0025;
+        margin: 15px 0;
+        opacity: 0.1;
+      }
+      & > .active {
+        background-color: #ea0025;
+        opacity: 1;
+      }
+    }
+    .text-content {
+      margin-left: 50px;
+      h6 {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #ea0000;
+        margin-bottom: 30px;
+      }
+      h1 {
+        font-family: "Abhaya Libre ExtraBold";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 182px;
+        line-height: 100px;
+        letter-spacing: -0.1em;
+        color: #ea0000;
+        margin-bottom: 50px;
+      }
+      p {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 34px;
+        color: #2a333e;
+        margin-bottom: 30px;
+      }
+      .btn {
+        margin-bottom: 80px;
+        & > :first-child {
+          color: #ffff;
+          width: 223px;
+          height: 65px;
+          border: none;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 28px;
+          background: #ea0000;
+          box-shadow: 0px 100px 80px rgba(234, 0, 37, 0.1),
+            0px 64.8148px 46.8519px rgba(234, 0, 37, 0.0759259),
+            0px 38.5185px 25.4815px rgba(234, 0, 37, 0.0607407),
+            0px 20px 13px rgba(234, 0, 37, 0.05),
+            0px 8.14815px 6.51852px rgba(234, 0, 37, 0.0392593),
+            0px 1.85185px 3.14815px rgba(234, 0, 37, 0.0240741);
+          border-radius: 10px;
+        }
+        & > :last-child {
+          color: #ffff;
+          width: 223px;
+          height: 65px;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          border: none;
+          line-height: 28px;
+          background: #2a333e;
+          box-shadow: 0px 100px 80px rgba(68, 68, 68, 0.1),
+            0px 64.8148px 46.8519px rgba(68, 68, 68, 0.0759259),
+            0px 38.5185px 25.4815px rgba(68, 68, 68, 0.0607407),
+            0px 20px 13px rgba(68, 68, 68, 0.05),
+            0px 8.14815px 6.51852px rgba(68, 68, 68, 0.0392593),
+            0px 1.85185px 3.14815px rgba(68, 68, 68, 0.0240741);
+          border-radius: 10px;
+        }
+      }
+      .time-food {
+        display: flex;
+
+        align-items: center;
+        & > :first-child {
+          margin-right: 80px;
+        }
+        .lunch,
+        .dinner {
+          & > :first-child {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 34px;
+            color: #2a333e;
+          }
+          & > :last-child {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 34px;
+            color: #2a333e;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+  .section-img {
+    img {
+      position: absolute;
+      width: 879px;
+      height: 891px;
+      left: 566px;
+      top: 50px;
+
+      background: url(chicken-shish-kebab-with-vegetables-isolated-top-view-copy-space.jpg);
+      mix-blend-mode: multiply;
+    }
+  }
+}
