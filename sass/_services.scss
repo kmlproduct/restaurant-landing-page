@@ -1,0 +1,101 @@
+.service {
+  text-align: center;
+  h6 {
+    font-family: "Poppins" sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #2a333e;
+  }
+  .h1-store {
+    margin-bottom: 100px;
+    h1 {
+      font-family: "Abhaya Libre ExtraBold";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 80px;
+      line-height: 100px;
+      letter-spacing: -0.08em;
+      color: #ea0000;
+    }
+
+    position: relative;
+    img {
+      width: 183px;
+      height: 21px;
+      transform: translateX(-61px);
+    }
+  }
+  .services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .service-1 {
+      position: relative;
+      &:not(:last-child) {
+        margin-right: 100px;
+      }
+
+      // width: 180px;
+      // height: 180px;
+      // margin-bottom: 50px;
+      // overflow: hidden;
+      img {
+        width: 180px;
+        height: 180px;
+      }
+      .review {
+        margin-bottom: 25px;
+        margin-top: -58px;
+        img {
+          width: 15px;
+          height: 15px;
+          //   margin-top: -70px;
+        }
+      }
+      p {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: center;
+        color: #2a333e;
+        margin-bottom: 15px;
+      }
+      h3 {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 42px;
+        text-align: center;
+        color: #2a333e;
+        margin-bottom: 40px;
+      }
+      button {
+        width: 202px;
+        height: 47px;
+        border: none;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        color: #f9f9f9;
+        background: #ea0000;
+        box-shadow: 0px 100px 80px rgba(234, 0, 37, 0.1),
+          0px 64.8148px 46.8519px rgba(234, 0, 37, 0.0759259),
+          0px 38.5185px 25.4815px rgba(234, 0, 37, 0.0607407),
+          0px 20px 13px rgba(234, 0, 37, 0.05),
+          0px 8.14815px 6.51852px rgba(234, 0, 37, 0.0392593),
+          0px 1.85185px 3.14815px rgba(234, 0, 37, 0.0240741);
+        border-radius: 10px;
+      }
+    }
+  }
+}
