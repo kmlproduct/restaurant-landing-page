@@ -125,11 +125,12 @@
     }
   }
   .section-img {
+    overflow: hidden;
     img {
       position: absolute;
       width: 879px;
       height: 891px;
-      left: 566px;
+      right: 300px;
       top: 50px;
 
       background: url(chicken-shish-kebab-with-vegetables-isolated-top-view-copy-space.jpg);

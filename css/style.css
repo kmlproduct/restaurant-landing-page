@@ -88,6 +88,8 @@ body {
 }
 
 .container {
+  margin: auto;
+  max-width: 1440px;
   padding: 70px;
 }
 
@@ -205,11 +207,14 @@ body {
   color: #2a333e;
   opacity: 0.5;
 }
+.slider .section-img {
+  overflow: hidden;
+}
 .slider .section-img img {
   position: absolute;
   width: 879px;
   height: 891px;
-  left: 566px;
+  right: 300px;
   top: 50px;
   background: url(chicken-shish-kebab-with-vegetables-isolated-top-view-copy-space.jpg);
   mix-blend-mode: multiply;
@@ -303,4 +308,349 @@ body {
   background: #ea0000;
   box-shadow: 0px 100px 80px rgba(234, 0, 37, 0.1), 0px 64.8148px 46.8519px rgba(234, 0, 37, 0.0759259), 0px 38.5185px 25.4815px rgba(234, 0, 37, 0.0607407), 0px 20px 13px rgba(234, 0, 37, 0.05), 0px 8.14815px 6.51852px rgba(234, 0, 37, 0.0392593), 0px 1.85185px 3.14815px rgba(234, 0, 37, 0.0240741);
   border-radius: 10px;
+}
+
+.more-product {
+  display: flex;
+  justify-content: space-between;
+}
+.more-product .food-category {
+  width: 22%;
+  position: relative;
+}
+.more-product .food-category::after {
+  content: "";
+  position: absolute;
+  width: 3.65px;
+  height: 452.91px;
+  left: 282.46px;
+  top: 20.15px;
+  background: #ea0000;
+  opacity: 0.05;
+}
+.more-product .food-category::before {
+  content: "";
+  position: absolute;
+  width: 3.65px;
+  height: 53.57px;
+  left: 282.46px;
+  top: 20.15px;
+  background: #2a333e;
+}
+.more-product .food-category .btn {
+  margin-bottom: 57px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  width: 206.98px;
+  height: 69.35px;
+  background: #ea0000;
+  box-shadow: 0px 100px 80px rgba(234, 0, 37, 0.1), 0px 64.8148px 46.8519px rgba(234, 0, 37, 0.0759259), 0px 38.5185px 25.4815px rgba(234, 0, 37, 0.0607407), 0px 20px 13px rgba(234, 0, 37, 0.05), 0px 8.14815px 6.51852px rgba(234, 0, 37, 0.0392593), 0px 1.85185px 3.14815px rgba(234, 0, 37, 0.0240741);
+  border-radius: 10px;
+}
+.more-product .food-category .btn div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 53.34px;
+  height: 53.34px;
+  background: #fdfefe;
+  box-shadow: 0px 32.0065px 42.6753px rgba(122, 122, 122, 0.08);
+  border-radius: 10.6688px;
+}
+.more-product .food-category .btn div img {
+  width: 41px;
+  height: 41px;
+}
+.more-product .food-category .btn span {
+  margin-left: 17.5px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.61px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.more-product .food-category .categorys {
+  display: flex;
+  align-items: center;
+  margin: 26px 0;
+}
+.more-product .food-category .categorys img {
+  margin-right: 18.5px;
+}
+.more-product .food-category .categorys span {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.61px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #2a333e;
+  opacity: 0.5;
+}
+.more-product .food-screen {
+  width: 770.68px;
+  height: 521.09px;
+  background: #f3dedc;
+  border-radius: 30.4376px;
+  padding: 73px;
+  position: relative;
+}
+.more-product .food-screen .faster-food {
+  width: 303px;
+  height: 43.83px;
+  padding-left: 19px;
+  background-color: #ffd9d6;
+  border: 1.2175px solid #fcc7c3;
+  border-radius: 60.8751px;
+  margin-bottom: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.more-product .food-screen .faster-food p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2a333e;
+}
+.more-product .food-screen .faster-food img {
+  width: 62.79px;
+  height: 63.79px;
+}
+.more-product .food-screen h1 {
+  font-family: "Abhaya Libre ExtraBold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 62px;
+  letter-spacing: -0.06em;
+  color: #ea0000;
+  margin-bottom: 21px;
+}
+.more-product .food-screen .text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.61px;
+  line-height: 34px;
+  color: #2a333e;
+  margin-bottom: 41px;
+}
+.more-product .food-screen button {
+  width: 171px;
+  height: 59px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  background: #2a333e;
+  box-shadow: 0px 100px 80px rgba(68, 68, 68, 0.1), 0px 64.8148px 46.8519px rgba(68, 68, 68, 0.0759259), 0px 38.5185px 25.4815px rgba(68, 68, 68, 0.0607407), 0px 20px 13px rgba(68, 68, 68, 0.05), 0px 8.14815px 6.51852px rgba(68, 68, 68, 0.0392593), 0px 1.85185px 3.14815px rgba(68, 68, 68, 0.0240741);
+  border-radius: 10px;
+}
+.more-product .food-screen .icon-coffee {
+  position: absolute;
+  width: 263px;
+  height: 263px;
+  left: 585px;
+  top: 393px;
+}
+.more-product .food-screen .mint-leaf {
+  position: absolute;
+  width: 81px;
+  height: 49px;
+  left: 459px;
+  top: -33px;
+}
+
+.best-sallers {
+  position: relative;
+}
+.best-sallers .header {
+  text-align: center;
+}
+.best-sallers .header h3 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #2a333e;
+}
+.best-sallers .header h1 {
+  font-family: "Abhaya Libre ExtraBold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: -0.08em;
+  color: #ea0000;
+}
+.best-sallers .cards {
+  margin-top: 53px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.best-sallers .cards .card-1 {
+  flex-grow: 1;
+  width: 370px;
+  height: 410px;
+  background: #ffffff;
+  border: 1.2px solid #efefef;
+  border-radius: 24px;
+  padding: 28px;
+}
+.best-sallers .cards .card-1 .img {
+  text-align: center;
+}
+.best-sallers .cards .card-1 .img img {
+  margin-bottom: -180px;
+}
+.best-sallers .cards .card-1 .review {
+  margin-bottom: 25px;
+}
+.best-sallers .cards .card-1 h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #2a333e;
+}
+.best-sallers .cards .card-1 p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  color: #2a333e;
+}
+.best-sallers .cards .card-1 .prices {
+  margin-top: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.best-sallers .cards .card-1 .prices span {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #2a333e;
+}
+.best-sallers .cards .card-1 .prices .share {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.best-sallers .cards .card-1 .prices .share > :first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background: #ea0000;
+  box-shadow: 0px 100px 80px rgba(234, 0, 37, 0.1), 0px 64.8148px 46.8519px rgba(234, 0, 37, 0.0759259), 0px 38.5185px 25.4815px rgba(234, 0, 37, 0.0607407), 0px 20px 13px rgba(234, 0, 37, 0.05), 0px 8.14815px 6.51852px rgba(234, 0, 37, 0.0392593), 0px 1.85185px 3.14815px rgba(234, 0, 37, 0.0240741);
+  border-radius: 10px;
+}
+.best-sallers .cards .card-1 .prices .share > :first-child img {
+  width: 16px;
+  height: 14px;
+}
+.best-sallers .cards .card-1 .prices .share > :last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  width: 32px;
+  height: 32px;
+  background: #2a333e;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+.best-sallers .cards .card-1 .prices .share > :last-child img {
+  width: 16px;
+  height: 14px;
+}
+.best-sallers .all-menu {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.best-sallers .all-menu .all-menu-btn {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 188px;
+  height: 62px;
+  background: #ea0000;
+  box-shadow: 0px 100px 80px rgba(234, 0, 37, 0.1), 0px 64.8148px 46.8519px rgba(234, 0, 37, 0.0759259), 0px 38.5185px 25.4815px rgba(234, 0, 37, 0.0607407), 0px 20px 13px rgba(234, 0, 37, 0.05), 0px 8.14815px 6.51852px rgba(234, 0, 37, 0.0392593), 0px 1.85185px 3.14815px rgba(234, 0, 37, 0.0240741);
+  border-radius: 10px;
+}
+.best-sallers .all-menu .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  background: #ffffff;
+  color: #ea0000;
+  box-shadow: 0px 10px 20px rgba(185, 66, 42, 0.19);
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 30px;
+}
+.best-sallers .all-menu span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.best-sallers .decore {
+  position: absolute;
+  width: 50px;
+  height: 42px;
+  left: 1297px;
+  top: 555px;
+}
+
+.our-app .section-1 {
+  width: 40%;
+}
+.our-app .section-1 .nav .nav-1 > div:first-child {
+  width: 36px;
+  height: 2px;
+  background-color: #2a333e;
+  margin-bottom: 3px;
+}
+.our-app .section-1 .nav .nav-1 > div:last-child {
+  width: 18px;
+  height: 2px;
+  background-color: #2a333e;
+}
+.our-app .section-1 h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #2a333e;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,172 @@
+.more-product {
+  display: flex;
+  justify-content: space-between;
+  .food-category {
+    width: 22%;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 3.65px;
+      height: 452.91px;
+      left: 282.46px;
+      top: 20.15px;
+      background: #ea0000;
+      opacity: 0.05;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 3.65px;
+      height: 53.57px;
+      left: 282.46px;
+      top: 20.15px;
+      background: #2a333e;
+    }
+    .btn {
+      margin-bottom: 57px;
+      display: flex;
+      padding: 10px;
+      align-items: center;
+      width: 206.98px;
+      height: 69.35px;
+      background: #ea0000;
+      box-shadow: 0px 100px 80px rgba(234, 0, 37, 0.1),
+        0px 64.8148px 46.8519px rgba(234, 0, 37, 0.0759259),
+        0px 38.5185px 25.4815px rgba(234, 0, 37, 0.0607407),
+        0px 20px 13px rgba(234, 0, 37, 0.05),
+        0px 8.14815px 6.51852px rgba(234, 0, 37, 0.0392593),
+        0px 1.85185px 3.14815px rgba(234, 0, 37, 0.0240741);
+      border-radius: 10px;
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 53.34px;
+        height: 53.34px;
+        background: #fdfefe;
+        box-shadow: 0px 32.0065px 42.6753px rgba(122, 122, 122, 0.08);
+        border-radius: 10.6688px;
+
+        img {
+          width: 41px;
+          height: 41px;
+        }
+      }
+      span {
+        margin-left: 17.5px;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14.61px;
+        line-height: 17px;
+        text-transform: capitalize;
+        color: #ffffff;
+      }
+    }
+    .categorys {
+      display: flex;
+      align-items: center;
+      margin: 26px 0;
+      img {
+        margin-right: 18.5px;
+      }
+      span {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14.61px;
+        line-height: 17px;
+        text-transform: capitalize;
+        color: #2a333e;
+        opacity: 0.5;
+      }
+    }
+  }
+  .food-screen {
+    width: 770.68px;
+    height: 521.09px;
+    background: #f3dedc;
+    border-radius: 30.4376px;
+    padding: 73px;
+    position: relative;
+    .faster-food {
+      width: 303px;
+      height: 43.83px;
+      padding-left: 19px;
+      background-color: #ffd9d6;
+      border: 1.2175px solid #fcc7c3;
+      border-radius: 60.8751px;
+      margin-bottom: 19px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      p {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #2a333e;
+      }
+      img {
+        width: 62.79px;
+        height: 63.79px;
+      }
+    }
+    h1 {
+      font-family: "Abhaya Libre ExtraBold";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 80px;
+      line-height: 62px;
+      letter-spacing: -0.06em;
+      color: #ea0000;
+      margin-bottom: 21px;
+    }
+    .text {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14.61px;
+      line-height: 34px;
+      color: #2a333e;
+      margin-bottom: 41px;
+    }
+    button {
+      width: 171px;
+      height: 59px;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 19px;
+      text-align: center;
+      color: #ffffff;
+      background: #2a333e;
+      box-shadow: 0px 100px 80px rgba(68, 68, 68, 0.1),
+        0px 64.8148px 46.8519px rgba(68, 68, 68, 0.0759259),
+        0px 38.5185px 25.4815px rgba(68, 68, 68, 0.0607407),
+        0px 20px 13px rgba(68, 68, 68, 0.05),
+        0px 8.14815px 6.51852px rgba(68, 68, 68, 0.0392593),
+        0px 1.85185px 3.14815px rgba(68, 68, 68, 0.0240741);
+      border-radius: 10px;
+    }
+    .icon-coffee {
+      position: absolute;
+      width: 263px;
+      height: 263px;
+      left: 585px;
+      top: 393px;
+    }
+    .mint-leaf {
+      position: absolute;
+      width: 81px;
+      height: 49px;
+      left: 459px;
+      top: -33px;
+    }
+  }
+}
