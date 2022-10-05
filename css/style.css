@@ -1007,6 +1007,7 @@ body {
 
 .footer {
   background: #2a333e;
+  margin-top: -219px;
 }
 .footer h1 {
   font-family: "Poppins";
