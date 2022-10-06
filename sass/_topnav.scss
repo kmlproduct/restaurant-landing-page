@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     .logo {
       img {
         width: 113.45px;
@@ -79,6 +80,26 @@
             // backdrop-filter: blur(2px);
           }
         }
+      }
+    }
+  }
+}
+@media (max-width: 986px) {
+  .container {
+    .nav {
+      .logo,
+      .menu,
+      .right-menu {
+        margin: 20px 0;
+      }
+    }
+  }
+}
+@media (max-width: 697px) {
+  .container {
+    .nav {
+      .menu {
+        display: none;
       }
     }
   }

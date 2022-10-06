@@ -31,18 +31,13 @@
   }
   .services {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
     .service-1 {
       position: relative;
-      &:not(:last-child) {
-        margin-right: 100px;
-      }
-
-      // width: 180px;
-      // height: 180px;
-      // margin-bottom: 50px;
-      // overflow: hidden;
+      flex-grow: 1;
       img {
         width: 180px;
         height: 180px;
@@ -53,7 +48,6 @@
         img {
           width: 15px;
           height: 15px;
-          //   margin-top: -70px;
         }
       }
       p {
@@ -77,7 +71,7 @@
         margin-bottom: 40px;
       }
       button {
-        width: 202px;
+        padding: 0 10px;
         height: 47px;
         border: none;
         font-family: "Poppins";

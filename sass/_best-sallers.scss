@@ -174,3 +174,23 @@
     top: 555px;
   }
 }
+@media (max-width: 767px) {
+  .best-sallers {
+    .header {
+      h1 {
+        font-size: 50px;
+        line-height: 60px;
+      }
+    }
+  }
+}
+@media (max-width: 524px) {
+  .best-sallers {
+    .header {
+      h1 {
+        font-size: 30px;
+        line-height: 60px;
+      }
+    }
+  }
+}

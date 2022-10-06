@@ -1,10 +1,11 @@
 .slider {
   display: flex;
   margin-bottom: 100px;
+  gap: 50px;
+  flex-wrap: wrap;
   .section-text {
-    width: 50%;
+    width: 45%;
     display: flex;
-
     .next-prev {
       display: flex;
       flex-direction: column;
@@ -54,10 +55,12 @@
         margin-bottom: 30px;
       }
       .btn {
+        display: flex;
         margin-bottom: 80px;
         & > :first-child {
+          margin-right: 10px;
           color: #ffff;
-          width: 223px;
+          padding: 8px 32px;
           height: 65px;
           border: none;
           font-family: "Poppins";
@@ -76,7 +79,7 @@
         }
         & > :last-child {
           color: #ffff;
-          width: 223px;
+          padding: 8px 32px;
           height: 65px;
           font-family: "Poppins";
           font-style: normal;
@@ -125,7 +128,8 @@
     }
   }
   .section-img {
-    overflow: hidden;
+    // position: relative;
+    width: 45%;
     img {
       position: absolute;
       width: 879px;
@@ -135,6 +139,35 @@
 
       background: url(chicken-shish-kebab-with-vegetables-isolated-top-view-copy-space.jpg);
       mix-blend-mode: multiply;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .section-img {
+    display: none;
+  }
+  .btn {
+    button {
+      margin: 5px 0;
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 667px) {
+  .slider {
+    width: 100%;
+    .section-text {
+      .text-content {
+        h1 {
+          font-size: 82px;
+        }
+        .btn {
+          flex-direction: column;
+          button {
+            // width: 100%;
+          }
+        }
+      }
     }
   }
 }

@@ -1,8 +1,10 @@
 .more-product {
   display: flex;
   justify-content: space-between;
+  gap: 94px;
+  flex-wrap: wrap;
   .food-category {
-    width: 22%;
+    width: 23%;
     position: relative;
     &::after {
       content: "";
@@ -85,12 +87,32 @@
     }
   }
   .food-screen {
-    width: 770.68px;
+    width: 65%;
     height: 521.09px;
     background: #f3dedc;
     border-radius: 30.4376px;
     padding: 73px;
     position: relative;
+    .next-prev {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      top: 10px;
+      left: 22px;
+      & > div {
+        width: 9.87px;
+        height: 9.87px;
+        margin: 5px;
+        background-color: red;
+        border-radius: 50%;
+        &:nth-child(2) {
+          background-color: #80c03d;
+        }
+        &:nth-child(3) {
+          background-color: #e6f2d8;
+        }
+      }
+    }
     .faster-food {
       width: 303px;
       height: 43.83px;
@@ -158,8 +180,8 @@
       position: absolute;
       width: 263px;
       height: 263px;
-      left: 585px;
-      top: 393px;
+      left: 491px;
+      top: 385px;
     }
     .mint-leaf {
       position: absolute;
@@ -167,6 +189,51 @@
       height: 49px;
       left: 459px;
       top: -33px;
+    }
+    .decore {
+      position: absolute;
+      left: -135px;
+      top: 168px;
+    }
+  }
+}
+@media (max-width: 1026px) {
+  .more-product {
+    .food-screen {
+      h1 {
+        font-size: 50px;
+      }
+    }
+  }
+}
+@media (max-width: 875px) {
+  .more-product {
+    .food-screen {
+      width: 100%;
+      .icon-coffee {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 625px) {
+  .more-product {
+    .food-screen {
+      padding: 35px 20px;
+      .faster-food {
+        width: 100%;
+        p {
+          font-size: 11px;
+        }
+      }
+      h1 {
+        font-size: 30px;
+        line-height: 39px;
+      }
+      .text {
+        line-height: 26px;
+        margin-bottom: 20px;
+      }
     }
   }
 }
