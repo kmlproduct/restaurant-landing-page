@@ -1,4 +1,5 @@
 .testimonial {
+  position: relative;
   .header {
     text-align: center;
     margin-bottom: 130px;
@@ -33,6 +34,7 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 80px;
+    margin-bottom: 100px;
     .section-1 {
       display: flex;
       align-items: flex-start;
@@ -86,13 +88,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 156px;
+    /* margin-top: 156px; */
     background: #ffffff;
-    max-width: 888px;
+    /* max-width: 888px; */
     border: 1px solid #ea0000;
     border-radius: 47px;
     padding: 30px 0;
-    transform: translateX(25%);
+    /* transform: translateX(25%); */
+    width: 50%;
+    position: absolute;
+    right: 28%;
+
     .header {
       margin-bottom: 34px;
       h1 {
@@ -126,7 +132,7 @@
     .input {
       border: 1px solid #ea0000;
       border-radius: 47px;
-      width: 448px;
+      width: 80%;
       height: 56px;
       display: flex;
       justify-content: space-between;
@@ -157,6 +163,73 @@
         line-height: 21px;
         color: #ffffff;
       }
+    }
+  }
+}
+@media (max-width: 690px) {
+  .testimonial {
+    .header {
+      margin-bottom: 40px;
+    }
+    .sections {
+      flex-wrap: wrap;
+    }
+  }
+}
+@media (max-width: 520px) {
+  .testimonial {
+    .header {
+      h1 {
+        font-size: 30px;
+      }
+      img {
+        position: absolute;
+        top: 86px;
+
+        right: 127px;
+        width: 90px;
+      }
+    }
+  }
+}
+@media (max-width: 967px) {
+  .testimonial {
+    .base {
+      width: 70%;
+      right: 15%;
+    }
+  }
+}
+@media (max-width: 667px) {
+  .testimonial {
+    .base {
+      width: 90%;
+      right: 32px;
+      top: 747px;
+      .header {
+        margin-bottom: 4px;
+        p {
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 524px) {
+  .testimonial {
+    .base {
+      width: 90%;
+      right: 32px;
+      top: 870px;
+    }
+  }
+}
+@media (max-width: 420px) {
+  .testimonial {
+    .base {
+      width: 90%;
+      right: 32px;
+      top: 1024px;
     }
   }
 }

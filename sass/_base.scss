@@ -8,6 +8,12 @@ body {
 }
 .container {
   margin: auto;
-  max-width: 1200px;
-  padding: 70px;
+  max-width: 1440px;
+  padding: 70px 10px;
+  overflow: hidden;
+}
+@media (max-width: 667px) {
+  .container {
+    padding: 20px 10px;
+  }
 }

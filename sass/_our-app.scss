@@ -1,13 +1,18 @@
 .our-app {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   background-color: #fef2f2;
-  gap: 100px;
+}
+.our-app-container {
+  display: flex;
+  gap: 50px;
   flex-wrap: wrap;
+  justify-content: space-between;
   .section-1 {
     width: 40%;
+    flex-grow: 1;
     background-color: #ffff;
+    box-shadow: 10px 15px 58px rgba(0, 0, 0, 0.11);
+    border-radius: 45px;
+    padding: 34px 22px;
 
     .nav {
       .nav-1 {
@@ -37,46 +42,49 @@
       display: flex;
       justify-content: space-between;
       gap: 16px;
-
       .grid-1 {
         flex-grow: 1;
         position: relative;
-        background: #ffffff;
         box-shadow: 8px 8px 50px rgba(234, 0, 37, 0.17);
         border-radius: 8px;
-        width: 211px;
         padding: 10px;
 
         .plate {
-          position: absolute;
-          left: -26px;
-          top: -88px;
-          width: 258px;
+          // position: absolute;
+          text-align: center;
+          // position: relative;
+          // width: 258px;
+
+          img {
+            margin-top: -50px;
+          }
         }
-        h2 {
-          margin-top: 150px;
-          font-family: "Poppins", sans-serif;
-          font-style: normal;
-          font-weight: 700;
-          font-size: 14px;
-          line-height: 21px;
-          color: #2a333e;
-          margin-bottom: 8px;
-        }
-        .review {
-          margin-bottom: 22px;
-        }
-        .price {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          span {
+        .grid-1-1 {
+          background-color: white;
+          h2 {
             font-family: "Poppins", sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 14px;
             line-height: 21px;
             color: #2a333e;
+            margin-bottom: 8px;
+          }
+          .review {
+            margin-bottom: 22px;
+          }
+          .price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+              font-family: "Poppins", sans-serif;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 14px;
+              line-height: 21px;
+              color: #2a333e;
+            }
           }
         }
       }
@@ -88,6 +96,7 @@
       padding: 10px;
       margin: 30px 0;
       position: relative;
+      width: 87%;
       h1 {
         margin: 0;
         font-family: "Poppins", sans-serif;
@@ -112,7 +121,6 @@
         .plate {
           position: absolute;
           right: -129px;
-
           top: 16px;
         }
       }
@@ -126,6 +134,7 @@
         z-index: 2;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         .left-icon,
         .right-icon {
           display: flex;
@@ -157,11 +166,8 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          position: absolute;
-          width: 50px;
-          height: 50px;
-          left: 197px;
-          top: -20px;
+
+          transform: translateY(-50px);
           background: #ea0000;
           box-shadow: 0px 100px 80px rgba(234, 0, 37, 0.1),
             0px 64.8148px 46.8519px rgba(234, 0, 37, 0.0759259),
@@ -170,6 +176,10 @@
             0px 8.14815px 6.51852px rgba(234, 0, 37, 0.0392593),
             0px 1.85185px 3.14815px rgba(234, 0, 37, 0.0240741);
           border-radius: 50%;
+          img {
+            width: 50px;
+            height: 28px;
+          }
         }
       }
       .decore {
@@ -227,21 +237,56 @@
     }
   }
 }
+
 @media (max-width: 1050px) {
-  .our-app {
+  .our-app-container {
+    flex-direction: column;
     .section-1 {
+      width: 50%;
       .grid {
         .grid-1 {
           .plate {
-            width: 100px;
-            left: -26px;
-            top: -88px;
+            // width: 100px;
+            // left: -26px;
+            // top: -88px;
           }
           h2 {
             margin-top: 50px;
           }
         }
       }
+    }
+  }
+}
+@media (max-width: 967px) {
+  .our-app-container {
+    flex-direction: column;
+    .section-1 {
+      width: 70%;
+    }
+    .section-2 {
+      padding-top: 0;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .our-app-container {
+    flex-direction: column;
+    .section-1 {
+      width: 100%;
+      .icons {
+        .left-icon {
+          & > div {
+            justify-content: space-between;
+          }
+        }
+      }
+      .bag {
+        display: none;
+      }
+    }
+    .section-2 {
+      width: 100%;
     }
   }
 }
